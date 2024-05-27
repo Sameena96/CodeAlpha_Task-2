@@ -1,0 +1,76 @@
+/* Enhanced Style.css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #6dd5ed, #2193b0); /* Updated background */
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1 {
+  background: #5372F0;
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.weather-input {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.weather-input input,
+.weather-input button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.weather-data {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.days-forecast {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .weather-input,
+  .weather-data {
+    width: 100%;
+  }
+}
